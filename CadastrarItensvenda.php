@@ -39,10 +39,6 @@ include_once 'config.php';
 
             $Vendas->setIdcliente($idcliente);  
 
-            if($Vendas->insert()){
-                echo "Cliente ". $idcliente. " inserido com sucesso";
-            }
-
             foreach ($Vendas->findAll() as $key => $valu) { 
                 foreach ($Clientes->findAll() as $key => $value) { 
                     if($value->idcliente == $valu->idcliente){
@@ -50,7 +46,7 @@ include_once 'config.php';
                     }
                 }
             }
-            echo "Cliente ". $variavel. " aqui";
+    
             $idvenda = $variavel;
             $idproduto = $_POST['idproduto'];
 
@@ -60,7 +56,7 @@ include_once 'config.php';
             header('Refresh:5'); 
             
             if($Itensvendas->insert()){
-                echo "Cliente ". $idvenda. " inserido com sucesso";
+                echo "Venda concluída com sucesso para o ID Cliente [ ". $idcliente . " ]";            
             }
         endif;
     ?>
