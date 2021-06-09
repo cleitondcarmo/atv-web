@@ -6,11 +6,6 @@ require_once 'Clientes.php';
 require_once 'Produtos.php';
 require_once 'Itensvendas.php';
 require_once 'Vendas.php';
-include_once 'config.php';
-    $select = "SELECT * FROM produto";
-    $result = mysqli_query ($connection, $select);
-    $select2 = "SELECT * FROM cliente";
-    $result2 = mysqli_query ($connection, $select2);
 ?>
 
 <!DOCTYPE HTML>
