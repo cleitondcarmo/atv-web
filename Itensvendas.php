@@ -31,20 +31,24 @@ require_once 'CrudItensvenda.php';
     
      //faz insert   
     public function insert() {
-        $sql = "INSERT INTO $this->tabela (idvenda, idproduto) VALUES (:idvenda, :idproduto)";
+        $sql = "INSERT INTO $this->tabela (idvenda, idproduto, valorvenda, quantidade) VALUES (:idvenda, :idproduto, :valorvenda, :quantidade)";
         $stm = DB::prepare($sql);
         $stm->bindParam(':idvenda', $this->idvenda);
         $stm->bindParam(':idproduto', $this->idproduto);
+        $stm->bindParam(':valorvenda', $this->valorvenda);
+        $stm->bindParam(':quantidade', $this->quantidade);
         return $stm->execute();
     }
     
     //update de itens
     public function update($iditensvenda) {
-        $sql = "UPDATE $this->tabela SET idvenda = :idvenda, idproduto = :idproduto WHERE iditensvenda = :iditensvenda";
+        $sql = "UPDATE $this->tabela SET idvenda = :idvenda, idproduto = :idproduto, quantidade = :quantide, valorvenda = :valorvenda WHERE iditensvenda = :iditensvenda";
         $stm = DB::prepare($sql);
         $stm->bindParam(':iditensvenda', $iditensvenda, PDO::PARAM_INT);
         $stm->bindParam(':idvenda', $this->idvenda);
         $stm->bindParam(':idproduto', $this->idproduto);
+        $stm->bindParam(':quantidade', $this->quantidade);
+        $stm->bindParam(':valorvenda', $this->valorvenda);
         return $stm->execute();
     }
     

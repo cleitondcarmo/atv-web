@@ -7,12 +7,18 @@ define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
 define('BASE', 'atvweb');
-$HOST  =   'localhost';
-$USER  =   'root';
-$PASS  =   '';
-$BASE  =   "atvweb";
-$connection = mysqli_connect($HOST, $USER, 
-$PASS,"$BASE");
+$servername = "localhost";
+$database = "atvweb";
+$username = "root";
+$password = "";
+
+$conn = mysqli_connect($servername, $username, $password, $database);
+if (!$conn) {
+    die("Falha na conexão: " . mysli_connect_error());
+};
 ?>
+
+
+
 
 

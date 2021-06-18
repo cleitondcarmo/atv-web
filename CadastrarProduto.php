@@ -14,13 +14,16 @@ require_once 'Produtos.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <style rel="styleheet">
+        @import url("style.css");
+    </style>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <title>Cadastrar produto - WEB I</title>
 
 </head>
 
-<body>
+<body class="imagemcadproduto">
    <?php
         $Produtos = new Produtos;
         if(isset($_POST['cadastrar'])):
@@ -38,7 +41,7 @@ require_once 'Produtos.php';
     <div class="container">
         <div class="row">
             <div class="col">
-                <form method='post' action="">
+                <form method='post' action="" style="margin: auto; margin-top: 10%">
                     <h1>Cadastro de produtos</h1>
                     <div class="mb-3">
                         <label for='Nome'> Nome:</label>
@@ -48,9 +51,9 @@ require_once 'Produtos.php';
                         <label for='valor'> Valor: </label>    
                         <input type="text" name="valor" class="form-control"/>
                     </div>
-                    <div class="mb-3">
-                        <input type="submit" name="cadastrar" class="btn btn-primary"/>
-                        <a class="btn btn-primary" href=menu.php>Voltar ao menu</a>
+                    <div class="mb-3" style="margin: auto; margin-top: 2%">
+                        <input type="submit" name="cadastrar" class="btn btn-primary" style="color: yellow; background: black; border: 0"/>
+                        <a class="btn btn-primary" href=menu.php style="color: yellow; background: black; border: 0">Voltar ao menu</a>
                     </div>
                 </form>
             </div>

@@ -16,22 +16,27 @@ require_once 'Produtos.php';
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style rel="styleheet">
+        @import url("style.css");
+    </style>
         
-    <title>Lista de Produtos - WEB I</title>
+    <link rel="styleheet" type="text/css" href="style.css"/>
 </head>
 
-<body>
+<body class="imagemproduto menu">
     <h1>Lista de Produtos</h1>
     <!-- Inicio da tabela -->
-    <table class="table table-striped">
-            <div>
-                <thead>
-                    <tr class="active">
-                        <th>Nome</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-            </div>
+    <table class="table table-striped table-bordered table-dark table-sm table" style="margin: auto; margin-top: 10%">
+        <div>
+            <thead class="thead-black">
+                <tr>
+                    <th scope="col" width=30%>Nome dos produtos</th>
+                    <th scope="col" width=30%>Valor</th>
+                    <th scope="col" width=1%></th>
+                    <th scope="col" width=1%></th>
+                </tr>
+            </thead>
+        </div>
                 <tbody>
                     <?php 
                     
@@ -77,11 +82,7 @@ require_once 'Produtos.php';
                 </body>
             </table>
             <!-- Fim da tabela -->
-
-    <div style="height: 50px;">
-        <a class="btn btn-primary" href=Menu.php>Menu</a>
-    </div>
-
+            
 <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

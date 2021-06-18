@@ -16,20 +16,26 @@ require_once 'Clientes.php';
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <title>Lista de Clientes - WEB I</title>
+    <style rel="styleheet">
+        @import url("style.css");
+    </style>
+        
+    <link rel="styleheet" type="text/css" href="style.css"/>
+    <title >Lista de Clientes - WEB I</title>
 </head>
 
-<body>
-   <h1>Lista de clientes</h1>
+<body class="imagemcliente menu">
     <!-- Inicio da tabela -->
-    <table class="table table-striped">
+    <div>
+        <table class=" table table-striped table-bordered table-sm table table-dark " style="margin: auto; margin-top: 10%">
             <div class="mb-3"> 
             <div>
-                <thead>
-                    <tr>
-                        <th scope="col">Nome de clientes</th>
-                        <th scope="col">Endereço</th>
+                <thead class="thead-black">
+                    <tr class="table-active">
+                        <th scope="col" width=30%>Cliente</th>
+                        <th scope="col" width=30%>Endereço</th>
+                        <th scope="col" width=1%></th>
+                        <th scope="col" width=1%></th>
                     </tr>
                 </thead>
             </div>
@@ -61,11 +67,11 @@ require_once 'Clientes.php';
                             <input name="nome" type="hidden" value="<?php echo $value->nome;?>"/>
                             <input name="endereco" type="hidden" value="<?php echo $value->endereco;?>"/>
 
-                            <button name="alterar" type="submit" class="btn btn-warning">Alterar </button>
+                            <button name="alterar" type="submit" class="btn btn-warning">Alterar</button>
                             </div>
                         </form>
                         <td>
-                            <form method="post" >
+                            <form method="post">
                             <div>
                                 <input name="idcliente" type="hidden" value="<?php echo $value->idcliente;?>"/>
                                 <button name="excluir" type="submit" class="btn btn-danger">Excluir</button>
@@ -73,14 +79,15 @@ require_once 'Clientes.php';
                             </form>
 
                         </td>
+                    </tr> 
+               </div>     
+    </div>
+     <?php } ?>
+    </table>   
+</body>
 
-                    </tr>
-
-                    <?php } ?>
-                </body>
-            </table>
             <!-- Fim da tabela -->
-    <a class="btn btn-primary" href=Menu.php>Menu</a>
+
 <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

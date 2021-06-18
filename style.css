@@ -1,0 +1,200 @@
+@charset "UTF-8";
+body, html {
+    height: 110%;
+}
+
+.imagem{
+    background-image: url(../app/img/menu.png);
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}
+.imagemcliente{
+    background-image: url(../app/img/listacliente.png);
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}
+.imagemproduto{
+    background-image: url(../app/img/listaproduto.png);
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}
+.imagemcadproduto{
+    background-image: url(../app/img/cadproduto.png);
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}
+.imagemcadcliente{
+    background-image: url(../app/img/cadcliente.png);
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}
+
+.imagempadrao{
+    background-image: url(../app/img/padrao.png);
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}
+
+.table{
+    overflow-y: hidden;
+    max-height: 500px;
+    /*max-width: 1500px;*/
+    border: 1px solid rgb(245, 0, 0);
+    width: 70% !important;
+    margin:auto;
+}
+
+.button {
+    font-size: 60px;
+    margin: 40px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+#lc{
+    background-image: url(../app/img/botaoamarelo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 30%;
+    right: 78%;
+    width: 15%;
+    max-width: 100%;
+}
+
+#lp{
+    background-image: url(../app/img/botaoamarelo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 40%;
+    right: 78%;
+    width: 15%;
+    max-width: 100%;
+}
+
+#cadc{
+    background-image: url(../app/img/botaoamarelo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 48%;
+    right: 78%;
+    width: 15%;
+    max-width: 100%;
+}
+
+#cadp{
+    background-image: url(../app/img/botaoamarelo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 60%;
+    right: 78%;
+    width: 15%;
+    max-width: 100%;
+}
+
+#vend{
+    background-image: url(../app/img/botaored.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 80%;
+    right: 78%;
+    width: 15%;
+}
+
+#btnmenu{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:fixed;
+    top:450px;/*altura da classe*/
+}
+
+@media only screen and (max-device-width: 900px) {
+    .menu { width:100%; };
+}
+
+#h1{
+    font-size: clamp(0.90em, 1em + 3vw, 1.0em);
+}
+
+@media (max-width: 768px) {
+    .btn-responsive {
+      padding:2px 4px;
+      font-size:80%;
+      line-height: 1;
+      border-radius:3px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .btn-responsive {
+      padding:4px 9px;
+      font-size:90%;
+      line-height: 1.2;
+    }
+}

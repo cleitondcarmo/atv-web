@@ -17,34 +17,31 @@ require_once 'Clientes.php';
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <title>Menu - WEB I</title>
-
+    <style rel="styleheet">
+        @import url("style.css");
+    </style>
+        
+    <link rel="styleheet" type="text/css" href="style.css"/>
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <form method='post' action="">
-                    <h1>Menu</h1>
-                        <div class="btn-group-vertical">
-                            <a class="btn btn-primary" href=ListarClientes.php>Lista de clientes</a>
+<body class="imagem menu">
+      
+                        <div class="btn btn-outline" id="lc">
+                            <a href=ListarClientes.php ><button style="background: transparent; border-radius: 6px; padding: 10px; cursor: pointer; color: black; border: none; font-size: 16px btn-responsive">Lista de clientes</button></a>
                         </div>
-                        <div class="btn-group-vertical">
-                            <a class="btn btn-primary" href=CadastrarCliente.php>Cadastrar clientes</a>
+                        <div class="btn btn-outline h1" id="cadc">
+                            <a href=CadastrarCliente.php><button style="background: transparent; border-radius: 6px; padding: 10px; cursor: pointer; color: black; border: none; font-size: 16px; btn-responsive">Cadastrar clientes</button></a>
                         </div>
-                        <div class="btn-group-vertical">
-                            <a class="btn btn-primary" href=CadastrarItensvenda.php>Vender</a>
+                        <div class="btn btn-outline h1" id="vend">
+                            <a href=CadastrarItensvenda.php><button style="background: transparent; border-radius: 6px; padding: 10px; cursor: pointer; color: black; border: none; font-size: 16px btn-responsive">Vender</button></a>
                         </div>
-                        <div class="btn-group-vertical">
-                            <a class="btn btn-primary" href=ListarProdutos.php>Listar produtos</a>
+                        <div class="btn btn-outline" id="lp">
+                            <a href=ListarProdutos.php><button style="background: #FFF502; border-radius: 6px; padding: 10px; cursor: pointer; color: black; border: none; font-size: 16px btn-responsive">Listar produtos</button></a>
                         </div>
-                        <div class="btn-group-vertical">
-                            <a class="btn btn-primary" href=CadastrarProduto.php>Cadastrar produtos</a>
+                        <div class="btn btn-outline" id="cadp">
+                            <a href=CadastrarProduto.php class=""><button style="background: #FFF502; border-radius: 6px; padding: 10px; cursor: pointer; color: black; border: none; font-size: 16px btn-responsive">Cadastrar produtos</button></a>
                         </div>
-                </form>
-            </div>
-        </div>
-    </div>
+          
 
 
 <!-- Optional JavaScript; choose one of the two! -->

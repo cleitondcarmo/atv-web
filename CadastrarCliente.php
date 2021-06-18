@@ -3,7 +3,6 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 require_once 'Clientes.php';
-
 ?>
 
 <!DOCTYPE HTML>
@@ -13,6 +12,10 @@ require_once 'Clientes.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <style rel="styleheet">
+        @import url("style.css");
+    </style>
+
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,7 +23,7 @@ require_once 'Clientes.php';
 
 </head>
 
-<body>
+<body class="imagemcadcliente">
    <?php
     
       $Cliente = new Clientes;
@@ -39,7 +42,7 @@ require_once 'Clientes.php';
     <div class="container">
         <div class="row">
             <div class="col">
-            <form method='post' action="">
+            <form method='post' action="" style="margin: auto; margin-top: 10%">
             <h1>Cadastro de clientes</h1>
               <div class="mb-3">
                         <label for='Nome'> Nome:</label>
@@ -49,9 +52,9 @@ require_once 'Clientes.php';
                         <label for='endereço'> Endereço: </label>    
                         <input type="text" name="endereco" class="form-control"/>
                     </div>
-                    <div class="mb-3">
-                        <input type="submit" name="cadastrar" class="btn btn-primary"/>
-                        <a class="btn btn-primary" href=menu.php>Voltar ao menu</a>
+                    <div class="mb-3" style="margin: auto; margin-top: 2%">
+                        <input type="submit" name="cadastrar"  class="btn btn-primary" style="color: yellow; background: black; border: 0"/>
+                        <a class="btn btn-primary" href=menu.php style="color: yellow; background: black; border: 0">Voltar ao menu</a>
                     </div>
             </form>
             </div>
