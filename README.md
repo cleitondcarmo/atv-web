@@ -1,9 +1,11 @@
-# atv-web
+<div align="center">
+ Atv-Web
+</div>
 
 ### Atividade da disciplina Web I
 
 <div align="center">
-    <h2><p>Telas</p></h2>
+    <h2><p>Telas:</p></h2>
     <p><img src="https://user-images.githubusercontent.com/81137205/131270457-976ae903-50e5-44b4-961c-68489bc463a0.jpeg" width="75%"/></p>  
     <p><img src="https://user-images.githubusercontent.com/81137205/131270371-5a310ff5-2e32-47e2-9b5a-651a2625d8a2.jpeg" width="75%"/></p>
     <p><img src="https://user-images.githubusercontent.com/81137205/131270400-ef53de6f-5921-4ba0-b232-056731ee0420.jpeg" width="75%"/></p>
