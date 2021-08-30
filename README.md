@@ -1,8 +1,7 @@
 <div align="center">
- Atv-Web
+    <h1>Atv-Web</h1>
+    <h2>Atividade da disciplina Web I<h2>
 </div>
-
-### Atividade da disciplina Web I
 
 <div align="center">
     <h2><p>Telas:</p></h2>
